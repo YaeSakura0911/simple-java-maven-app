@@ -6,7 +6,6 @@ NAME=`mvn -q -DforceStdout help:evaluate -Dexpression=project.name`
 
 VERSION=`mvn -q -DforceStdout help:evaluate -Dexpression=project.version`
 
-set -x
 echo "Name: ${NAME}"
 echo "Version: ${VERSION}"
 java -jar target/${NAME}-${VERSION}.jar
